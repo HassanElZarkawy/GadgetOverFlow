@@ -12,7 +12,7 @@ class DbContext{
     
     private function __construct($database)
     {
-         $this->_pdo = new PDO("mysql:host=localhost;dbname=$database;charset=UTF8", 'root', 'nawwar123');
+         $this->_pdo = new PDO("mysql:host=localhost;dbname=$database;charset=UTF8", 'USERNAME', '######');
     }
     
     public static function getInstance($database = 'gadgetoverflow')
